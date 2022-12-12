@@ -6,9 +6,11 @@ public static class jdbcexample {
     {  
         try{ 
             // load JDBC Driver
-            Class.forName("com.mysql.jdbc.Driver");  
+            Class.forName("com.mysql.jdbc.Driver"); 
+            // Here : "com.mysql.jdbc.Driver" is Device Driver Name
             // Opening the connection
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost3000:/username","root","root");  
+            // Here : "com.mysql.jdbc.Driver" is Device Driver Name
             //here 'username' is database name, 'root' is username and password  
             
             // Creating a statment
